@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./images/desktop/image-hero.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    height: 650px;
+    color: white;
+    padding: 3% 7%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+   
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+}
+.textTop{
+    margin-top: 10%;
+    border: 2px solid white;
+    width: 65%;
+    height: 55%;
+    font-size: 75px;
+    padding: 1.5% 4%;
+    
+}
+.textTop p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contentCenter{
+    width: 80%;
+    margin: 10%;
+}
+#careers{
+    display: flex;
+    height: 490px;
+    
+}
+.imgLeft{
+    width: 70%;
+}
+.textRight{
+    width: 50%;
+    margin-top: 15%;
+    margin-left: -13%;
+    background-color: white;
+    padding-top: 7%;
+    padding-left: 8%;
+
+}
+#hombreAzul{
+    width: 100%;
+    height: 100%;
+}
+.textRight h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.textRight p{
+    margin-top: 15px;
+    font-size: 100%;
+}
+.titleEvents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.titleEvents p{
+    font-size: 25px;
+
+}
+.btnEvents{
+    width: 130px;
+    background-color: white;
+    font-weight: 700;
+    height: 30px;
+    border: 1px solid black;
+}
+.btnEvents:hover{
+    background-color: black;
+    color: white;
+    transition: background-color .5s;
+}
+.cardContainer{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 23.6% 23.6% 23.6% 23.6%;
+}
+#card1{
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.cards{
+    height: 450px;
+}
+.cards:hover{
+    opacity: 0.5;
+    transition: opacity .9s;
+    
+}
+.cards:hover .cardTexts{
+    color: rgb(199, 122, 122);
+
+}
+.cardTexts{
+    color: white;
+    margin-top: 340px;
+    width: 60%;
+    margin-left: 12%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+}
+#card2{
+    background-image: url('./images/desktop/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#card3{
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#card4{
+    background-image: url('./images/desktop/image-grid.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#card5{
+    background-image: url('./images/desktop/image-from-above.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}#card6{
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#card7{
+    background-image: url('./images/desktop/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#card8{
+    background-image: url('./images/desktop/image-fisheye.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#btnEvents2{
+    display: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 2% 10%;
+}
+.footerTitle{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menuResponsive{
+    display: none;
+}
+.icons{
+    margin-left: 10px;
+}
+.footerList{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.footerList ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.hover{
+    cursor: pointer;
+
+}
+.iconsFooter figure img:hover{
+    border-bottom: 2px solid white;
+}
+.footerList ul li:hover{
+    border-bottom: 2px solid white;
+}
+.footerList p{
+    color: rgb(126, 124, 121);
+}
+.checkbox{
+    opacity: 0;
+}
+
+
+@media(max-width:1034px){
+    .textTop p{
+        font-size: 60px;
+    }
+}
+@media(max-width:864px){
+    .textTop{
+        margin: 10%;
+        height: 50%;
+        width: 80%;
+    }
+    .textTop p{
+        font-size: 60px;
+    }
+    #careers{
+        width: 70%;
+        margin: 15%;
+        display: grid;
+        grid-template-columns: auto;
+        height: 600px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .textRight{
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .imgLeft{
+        margin-left: 15%;
+    }
+    .cardContainer{
+        grid-template-columns: auto auto;
+    }
+    footer{
+        text-align: center;
+    }
+    .footerTitle{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footerList{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footerList ul{
+        flex-direction: column;
+    }
+    .footerList p{
+        margin-top: 5%;
+    }
+}
+@media(max-width:656px){
+    .contentCenter{
+        width: 80%;
+        margin: 10% 10%;
+    }
+    .textTop{
+        margin: 35% 5%;
+        height: 30%;
+        width: 90%;
+    }
+    .textTop p{
+        font-size: 40px;
+    }
+    nav ul li{
+        display: none;
+    }
+    .titleEvents p{
+        width: 100%;
+        text-align: center;
+    }
+    #btnEvents{
+        display: none;
+    }
+    #btnEvents2{
+        display: block;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    .cardContainer{
+        grid-template-columns: auto;
+    }
+    .cards{
+        height: 120px;
+        width: 100%;
+        
+    }
+    #card1{
+        background-image: url('./images/mobile/image-deep-earth.jpg');
+    
+    }
+   
+    #card2{
+        background-image: url('./images/mobile/image-night-arcade.jpg');
+    
+    }
+    #card3{
+        background-image: url('./images/mobile/image-soccer-team.jpg');
+    
+    }
+    #card4{
+        background-image: url('./images/mobile/image-grid.jpg');
+    
+    }
+    #card5{
+        background-image: url('./images/mobile/image-from-above.jpg');
+     
+    }#card6{
+        background-image: url('./images/mobile/image-pocket-borealis.jpg');
+      
+    }
+    #card7{
+        background-image: url('./images/desktop/image-curiosity.jpg');
+     
+    }
+    #card8{
+        background-image: url('./images/desktop/image-fisheye.jpg');
+       
+    }
+    .cardTexts{
+        color: white;
+        margin-top: 40px;
+        width: 50%;
+        margin-left: 10%;
+
+    }
+   
+    .menuResponsive{
+        display: block;
+    }
+    #close{
+        display: none;
+    }
+    .checkbox:checked ~ #open{
+        display: none;
+    
+    }
+    .checkbox:checked ~ #close{
+        display: block;
+    }
+
+}
